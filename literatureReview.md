@@ -1,19 +1,19 @@
 ###### Major Studio 2 : Thesis
 ### Literature Review
 
-###### (Tentative) Thesis subject domains 
+###### Thesis subject domains 
 
-1. Airline on-time performance and consumer behavior
-2. Flight performance and predictions for better safety
-3. Disability and Employment
+1. Airline on-time performance and passenger traffic
+2. Flight performance and flight safety
 
-#####    [Subject domain](http://bobcat.library.nyu.edu/primo-explore/search?query=any,contains,disability%20and%20employment,AND&pfilter=lang,exact,eng,AND&pfilter=pfilter,exact,books,AND&pfilter=creationdate,exact,5-YEAR,AND&tab=default_tab&search_scope=default_scope&sortby=rank&vid=NS2-NUI&facet=library,include,BOBST&facet=rtype,include,books&facet=tlevel,include,available&mode=advanced&offset=0): Disability and Employment
-
-1. Morris, Richard. Disability Research and Policy - Current Perspectives. Mahwah, New Jersey : Lawrence Erlbaum Associates, Inc.,Publishers, 2005. (CN: HV 1553 .D5486 2005)
-2. Lamichhane, Kamal. Disability, Education and Employment in Developing Countries - From Charity to Investment. New Delhi, India : Akash Press, 2015. (CN: HV 1559 .A78L36 2015)
-
-
-#####    [Subject domain](http://bobcat.library.nyu.edu/primo-explore/search?query=title,contains,airline%20performance,AND&pfilter=lang,exact,eng,AND&pfilter=pfilter,exact,books,AND&pfilter=creationdate,exact,10-YEAR,AND&tab=default_tab&search_scope=default_scope&sortby=rank&vid=NS2-NUI&facet=rtype,include,books&facet=library,include,BOBST&mode=advanced&offset=0) Airline Performance
+##### [Subject domain](http://bobcat.library.nyu.edu/primo-explore/search?query=any,contains,civil%20aviation,AND&pfilter=pfilter,exact,books,AND&pfilter=creationdate,exact,5-YEAR,AND&tab=default_tab&search_scope=default_scope&sortby=rank&vid=NS2-NUI&facet=rtype,include,books&facet=library,include,BOBST&mode=advanced&offset=0) Civil Aviation
 
 1. Macário, Rosário, Eddy Van De Voorde. Critical Issues in Air Transport Economics and Business. Abingdon, Oxon: Routledge, 2011. (CN: HE 9782 .C75 2011)
 2. Sheth, Jadish, Fred Allvine, Can Uslay, Ashutosh Dixit. Deregulation and Competition. Mathura Road, New Delhi: Response Books, 2007. (CN: HE 9774 .S44 2007)
+3. Corporate Finance(CF) Group, YES BANK, Public and Social Policies Management(PSPM), YES BANK. Civil Aviation - Developing Remote and Regional Connectivity. Worli, Mumbai: 2014.(CN: 9871 .A4 C58 2014)
+4. Cento, Alessandro. The Airline Industry Challenges in the 21st Century. Italy: Physica-Verlag Heidelberg, 2009.(CN: HE 9782 .C45 2009)
+5. Duval, David Timothy. Air Transport in the Asia Pacific. Surrey, England: Ashgate Publishing Ltd., 2014. (CN:HE 9868 .A4 A48 2019)
+6. Harvey, Geraint. Management in the Airline Industry. Abingdon, Oxon: Routledge, 2007. (CN: HE 9843 .A4 H37 2007)
+7. Janić, Milan. The Sustainability of Air Transportation A Quantitative Analysis and Assessment. Hampshire, England: Ashgate Publishing Ltd., 2007. (CN: HE 9776 .J364 2007)
+8. Peoples, James. Advances in Airline Economics Pricing Bahavior and Non-Price Characteristics in the Airline Industry. Bingley, UK: Emerald Group Publishing Ltd.,2012. (CN: HE 9782 .P73 2012)
+9. Biswas, Rajiv. Emerging Markets Megatrends. Cham, Switzerland: Springer International Publishing, 2018. (CN: HG 5993 .B57 2018)
