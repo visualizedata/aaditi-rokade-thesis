@@ -16,7 +16,7 @@
 
 4. Cento, Alessandro. [The Airline Industry](https://github.com/aaditirokade/thesis/blob/master/TheAirlineIndustryReview.md) Challenges in the 21st Century. Italy: Physica-Verlag Heidelberg, 2009.*(CN: HE 9782 .C45 2009)*
 
-5. Duval, David Timothy. Air Transport in the Asia Pacific. Surrey, England: Ashgate Publishing Ltd., 2014. *(CN:HE 9868 .A4 A48 2019)*
+5. Duval, David Timothy. [Air Transport in the Asia Pacific](https://github.com/aaditirokade/thesis/blob/master/AirTransportAsia%20Pacific_review.md) Surrey, England: Ashgate Publishing Ltd., 2014. *(CN:HE 9868 .A4 A48 2019)*
 
 6. Harvey, Geraint. Management in the Airline Industry. Abingdon, Oxon: Routledge, 2007. *(CN: HE 9843 .A4 H37 2007)*
 
