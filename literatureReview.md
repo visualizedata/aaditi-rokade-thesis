@@ -22,6 +22,6 @@
 
 7. Janić, Milan. The Sustainability of Air Transportation A Quantitative Analysis and Assessment. Hampshire, England: Ashgate Publishing Ltd., 2007. *(CN: HE 9776 .J364 2007)*
 
-8. Peoples, James. Advances in Airline Economics Pricing Bahavior and Non-Price Characteristics in the Airline Industry. Bingley, UK: Emerald Group Publishing Ltd.,2012. *(CN: HE 9782 .P73 2012)*
+8. Peoples, James. Advances in Airline Economics Pricing Behavior and Non-Price Characteristics in the Airline Industry. Bingley, UK: Emerald Group Publishing Ltd.,2012. *(CN: HE 9782 .P73 2012)*
 
 9. Biswas, Rajiv. Emerging Markets Megatrends. Cham, Switzerland: Springer International Publishing, 2018. *(CN: HG 5993 .B57 2018)*
