@@ -1,7 +1,8 @@
 ### Civil Aviation In India
 
-[mindmap](https://github.com/aaditirokade/thesis/blob/master/mindmap/mindmap.png)
-[user profiles](https://github.com/aaditirokade/thesis/blob/master/outline/userProfiles_systemDiagram-01.png)
+1. [mindmap](https://github.com/aaditirokade/thesis/blob/master/mindmap/mindmap.png)
+
+2. [user profiles/ system diagram](https://github.com/aaditirokade/thesis/blob/master/outline/userProfiles_systemDiagram-01.png)
 
 #### Passenger Traffic Trends
 
