@@ -1,7 +1,7 @@
 ### Civil Aviation In India
 
 
-1. [mindmap](https://github.com/aaditirokade/thesis/blob/master/mindmap/mindmap.png)
+1. [mindmap](https://github.com/aaditirokade/thesis/blob/master/mindmap/mindmap.png) : http://www.xmind.net/m/chz5
 
 2. [user profiles/ system diagram](https://github.com/aaditirokade/thesis/blob/master/outline/userProfiles_systemDiagram-01.png)
 
