@@ -1,6 +1,10 @@
-### Civil Aviation In India: Passenger Traffic Prediction
+### Civil Aviation In India
 
-#### Passenger Traffic Trends
+
+1. [mindmap](https://github.com/aaditirokade/thesis/blob/master/mindmap/mindmap.png)
+
+2. [user profiles/ system diagram](https://github.com/aaditirokade/thesis/blob/master/outline/userProfiles_systemDiagram-01.png)
+
 
 #####  Comparative Analysis of Airlines
 
