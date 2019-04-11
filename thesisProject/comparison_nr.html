@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Thesis Project</title>
+    
+    <!--d3js-->
+    <!--<script src="https://d3js.org/d3.v5.js"></script>-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+   <!--LATO FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    
+    <!--CSS-->
+    <link rel='stylesheet' href='styles.css'>
+    
+            
+</head>
+
+<body>
+    
+    <script src="scatterPlot.js"></script>
+    <!--<script src="plot.js"></script>-->
+   
+   <div class="container">
+      <h4 id="main_title">Visualizing the impact of Climate Change on Flight Experience</h4>
+   </div>
+   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <a
+              class="nav-link"
+              id="v-pills-air-india-tab"
+              data-toggle="pill"
+              href="#v-pills-air-india"
+              role="tab"
+              aria-controls="v-pills-air-india"
+              aria-selected="true"
+              >Air India</a
+            >
+            
+            <a
+              class="nav-link"
+              id="v-pills-jet-airways-tab"
+              data-toggle="pill"
+              href="#v-pills-jet-airways"
+              role="tab"
+              aria-controls="v-pills-jet-airways"
+              aria-selected="false"
+              >Jet Airways
+            </a>
+            <a
+              class="nav-link"
+              id="v-pills-indigo-tab"
+              data-toggle="pill"
+              href="#v-pills-indigo"
+              role="tab"
+              aria-controls="v-pills-indigo"
+              aria-selected="false"
+              >IndiGo</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-spicejet-tab"
+              data-toggle="pill"
+              href="#v-pills-spicejet"
+              role="tab"
+              aria-controls="v-pills-spicejet"
+              aria-selected="false"
+              >SpiceJet</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-goair-tab"
+              data-toggle="pill"
+              href="#v-pills-goair"
+              role="tab"
+              aria-controls="v-pills-goair"
+              aria-selected="false"
+              >GoAir</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-airasia-india-tab"
+              data-toggle="pill"
+              href="#v-pills-airasia-india"
+              role="tab"
+              aria-controls="v-pills-airasia-india"
+              aria-selected="false"
+              >AirAsia India</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-vistara-tab"
+              data-toggle="pill"
+              href="#v-pills-vistara"
+              role="tab"
+              aria-controls="v-pills-vistara"
+              aria-selected="false"
+              >Vistara</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-air-india-express-tab"
+              data-toggle="pill"
+              href="#v-pills-air-india-express"
+              role="tab"
+              aria-controls="v-pills-air-india-express"
+              aria-selected="false"
+              >Air India Express</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-alliance-air-tab"
+              data-toggle="pill"
+              href="#v-pills-alliance-air"
+              role="tab"
+              aria-controls="v-pills-alliance-air"
+              aria-selected="false"
+              >Alliance Air</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-zoom-air-tab"
+              data-toggle="pill"
+              href="#v-pills-zoom-air"
+              role="tab"
+              aria-controls="v-pills-zoom-air"
+              aria-selected="false"
+              >Zoom Air</a
+            >
+            <a
+              class="nav-link"
+              id="v-pills-trujet-tab"
+              data-toggle="pill"
+              href="#v-pills-trujet"
+              role="tab"
+              aria-controls="v-pills-trujet"
+              aria-selected="false"
+              >TruJet
+            </a>
+            <a
+              class="nav-link"
+              id="v-pills-air-deccan-tab"
+              data-toggle="pill"
+              href="#v-pills-air-deccan"
+              role="tab"
+              aria-controls="v-pills-air-deccan"
+              aria-selected="false"
+              >Air Deccan
+            </a>
+          </div>
+          <div class="condition-box">
+            <ul>
+              <li>Rainfall</li>
+              <li>Temperature</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-10" id='this'>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- blue highlight -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <div class="footer">
+       <text> Sources: </text>
+          <a href="http://dgca.nic.in/"> DGCA </a>
+            <a href="http://www.imd.gov.in/Welcome%20To%20IMD/Welcome.php"> IMD </a>
+            <a href="https://data.gov.in/"> DataGov </a>
+    </div>
+    
+</body>
