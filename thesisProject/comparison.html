@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,15 +20,14 @@
     <script src="https://d3js.org/d3.v5.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="./lib/c3-0.6.14/c3.min.js"></script>
-    <script src="//d3js.org/d3-path.v0.1.min.js"></script>
-    <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
+    
     
    <!--LATO FONT-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     
     <!--CSS-->
-    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='styles_sp.css'>
     
     <!-- Load c3.css -->
     <link href="./lib/c3-0.6.14/c3.css" rel="stylesheet">
@@ -47,97 +47,98 @@
    
     <div class="container-fluid">
       <div class="row">
-        <div class="col-1.5">
+        <div class="sidebar">
           <div
-            class="nav flex-column nav-pills"
-            id="v-pills-tab"
+            class="nav flex-column nav-airlines"
+            id="v-airlines-tab"
             role="tablist"
             aria-orientation="vertical"
           >
+            <br><br><br>
             <a
               class="nav-link"
-              id="v-pills-air-india-tab"
+              id="air-india-tab"
               data-toggle="pill"
-              href="#v-pills-air-india"
+              href="#air-india"
               role="tab"
-              aria-controls="v-pills-air-india"
+              aria-controls="air-india"
               aria-selected="true"
               >Air India</a
             >
             <br>
             <a
               class="nav-link"
-              id="v-pills-jet-airways-tab"
+              id="jet-airways-tab"
               data-toggle="pill"
-              href="#v-pills-jet-airways"
+              href="#jet-airways"
               role="tab"
-              aria-controls="v-pills-jet-airways"
+              aria-controls="jet-airways"
               aria-selected="false"
               >Jet Airways
             </a>
             <br>
             <a
               class="nav-link"
-              id="v-pills-indigo-tab"
+              id="spicejet-tab"
               data-toggle="pill"
-              href="#v-pills-indigo"
+              href="#spicejet"
               role="tab"
-              aria-controls="v-pills-indigo"
-              aria-selected="false"
-              >IndiGo</a
-            >
-            <br>
-            <a
-              class="nav-link"
-              id="v-pills-spicejet-tab"
-              data-toggle="pill"
-              href="#v-pills-spicejet"
-              role="tab"
-              aria-controls="v-pills-spicejet"
+              aria-controls="spicejet"
               aria-selected="false"
               >SpiceJet</a
             >
             <br>
             <a
               class="nav-link"
-              id="v-pills-goair-tab"
+              id="go-air-tab"
               data-toggle="pill"
-              href="#v-pills-goair"
+              href="#go-air"
               role="tab"
-              aria-controls="v-pills-goair"
+              aria-controls="go-air"
               aria-selected="false"
               >GoAir</a
             >
             <br>
             <a
               class="nav-link"
-              id="v-pills-airasia-india-tab"
+              id="indigo-tab"
               data-toggle="pill"
-              href="#v-pills-airasia-india"
+              href="#indigo"
               role="tab"
-              aria-controls="v-pills-airasia-india"
+              aria-controls="indigo"
               aria-selected="false"
-              >AirAsia India</a
+              >IndiGo</a
             >
             <br>
             <a
               class="nav-link"
-              id="v-pills-vistara-tab"
+              id="air-asia-tab"
               data-toggle="pill"
-              href="#v-pills-vistara"
+              href="#air-asia"
               role="tab"
-              aria-controls="v-pills-vistara"
+              aria-controls="air-asia"
+              aria-selected="false"
+              >AirAsia </a
+            >
+            <br>
+            <a
+              class="nav-link"
+              id="vistara-tab"
+              data-toggle="pill"
+              href="#vistara"
+              role="tab"
+              aria-controls="vistara"
               aria-selected="false"
               >Vistara</a
             >
            <br>
             <a
               class="nav-link"
-              id="v-pills-trujet-tab"
+              id="trujet-tab"
               data-toggle="pill"
-              href="#v-pills-trujet"
+              href="#trujet"
               role="tab"
-              aria-controls="v-pills-trujet"
+              aria-controls="trujet"
               aria-selected="false"
               >TruJet
             </a>
@@ -180,3 +181,5 @@
     
     <script src="scatterPlot.js"></script>
 </body>
+
+</html>

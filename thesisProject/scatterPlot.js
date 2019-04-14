@@ -89,7 +89,7 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
      // ROUNDS_JAI
       var rounds_jai = svg.selectAll(".bar_jai").data(data).enter().append("circle").attr("class", "bar_jai")
                      .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*2; })
-                     .attr('r', function(d) { return d.JAI_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr('r', function(d) { return d.JAI_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -105,29 +105,10 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
                             div.transition().duration(500).attr('fill','black').style("opacity", 0);
                       });
                       
-    // ROUNDS_IGO
-      var rounds_igo = svg.selectAll(".bar_igo").data(data).enter().append("circle").attr("class", "bar_igo")
-                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*3; })
-                     .attr('r', function(d) { return d.IGO_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
-                     .attr('opacity', 0.8).on("mouseover", function(d) {
-
-                            // TOOLTIP : VISIBLE
-                            document.getElementById("tooltip").style.visibility='visible';
-
-                            // TOOLTIP : TRANSTITION, OPACITY
-                            div.transition().duration(200).style("opacity", 1);
-
-                            // TOOLTIP : CONTENT
-                            div.html('IGO : '+ d.month +' '+ d.year +': '+ d.IGO_can +'%');
-                      })
-                      .on("mouseout", function(d) {
-                            div.transition().duration(500).attr('fill','black').style("opacity", 0);
-                      });
-                      
     // ROUNDS_SEG
       var rounds_seg = svg.selectAll(".bar_seg").data(data).enter().append("circle").attr("class", "bar_seg")
-                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*4; })
-                     .attr('r', function(d) { return d.SEG_can*5; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*3; })
+                     .attr('r', function(d) { return d.SEG_can*5; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -145,8 +126,8 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
    
    // ROUNDS_GOW
       var rounds_gow = svg.selectAll(".bar_gow").data(data).enter().append("circle").attr("class", "bar_gow")
-                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*5; })
-                     .attr('r', function(d) { return d.GOW_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*4; })
+                     .attr('r', function(d) { return d.GOW_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -162,10 +143,30 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
                             div.transition().duration(500).attr('fill','black').style("opacity", 0);
                       });
     
+    // ROUNDS_IGO
+      var rounds_igo = svg.selectAll(".bar_igo").data(data).enter().append("circle").attr("class", "bar_igo")
+                     .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*5; })
+                     .attr('r', function(d) { return d.IGO_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
+                     .attr('opacity', 0.8).on("mouseover", function(d) {
+
+                            // TOOLTIP : VISIBLE
+                            document.getElementById("tooltip").style.visibility='visible';
+
+                            // TOOLTIP : TRANSTITION, OPACITY
+                            div.transition().duration(200).style("opacity", 1);
+
+                            // TOOLTIP : CONTENT
+                            div.html('IGO : '+ d.month +' '+ d.year +': '+ d.IGO_can +'%');
+                      })
+                      .on("mouseout", function(d) {
+                            div.transition().duration(500).attr('fill','black').style("opacity", 0);
+                      });
+                      
+                      
     // ROUNDS_IAD
       var rounds_iad = svg.selectAll(".bar_iad").data(data).enter().append("circle").attr("class", "bar_iad")
                      .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*6; })
-                     .attr('r', function(d) { return d.IAD_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr('r', function(d) { return d.IAD_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -184,7 +185,7 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
     // ROUNDS_VTI
       var rounds_vti = svg.selectAll(".bar_vti").data(data).enter().append("circle").attr("class", "bar_vti")
                      .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*7; })
-                     .attr('r', function(d) { return d.VTI_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr('r', function(d) { return d.VTI_can*6; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -203,7 +204,7 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
     // ROUNDS_TRJ
       var rounds_trj = svg.selectAll(".bar_trj").data(data).enter().append("circle").attr("class", "bar_trj")
                      .attr("cx", function(d,i) { return 20+i*width/56; }).attr("cy", function(d) { return 20+(height/8.5)*8; })
-                     .attr('r', function(d) { return d.TRJ_can*5; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr("fill", "#071026")
+                     .attr('r', function(d) { return d.TRJ_can*5; }).attr("stroke-width", 1.5).attr("stroke", "#808080").attr('stroke-width', 0.75).attr("fill", "#071026")
                      .attr('opacity', 0.8).on("mouseover", function(d) {
 
                             // TOOLTIP : VISIBLE
@@ -219,6 +220,120 @@ svg.append("g").attr("class", "x axis").attr('transform','translate(0,630)').cal
                             div.transition().duration(500).attr('fill','black').style("opacity", 0);
                       });
     
+    
+ //---------------------- sidebar highloghts------------------------
+//  AIC - Air India
+// JAI - Jet Airways
+// SEG - SpiceJet
+// GOW - GoAir
+// IGO - Indigo
+// IAD - AirAsia
+// VTI - Vistara
+// TRJ - TruJet
+
+ // AIC - Air India
+ d3.select('#air-india-tab').on('click', (data)=>{
+     console.log('Air India selected');
+     rounds_aic.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ // JAI - Jet Airways
+  d3.select('#jet-airways-tab').on('click', (data)=>{
+     console.log('Jet Airways selected');
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ // SEG - SpiceJet
+  d3.select('#spicejet-tab').on('click', (data)=>{
+     console.log("SpiceJet selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ //GOW - GoAir
+  d3.select('#go-air-tab').on('click', (data)=>{
+     console.log("GoAir selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ //IGO - Indigo
+  d3.select('#indigo-tab').on('click', (data)=>{
+     console.log("Indigo selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ //IAD - AirAsia
+  d3.select('#air-asia-tab').on('click', (data)=>{
+     console.log("AirAsia selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ // VTI - Vistara
+  d3.select('#vistara-tab').on('click', (data)=>{
+     console.log("Vistara selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','#d75b68').attr("stroke", 'none');
+     rounds_trj.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+ });
+ 
+ // TRJ - TruJet
+  d3.select('#trujet-tab').on('click', (data)=>{
+     console.log("TruJet selected");
+     rounds_aic.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_jai.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_seg.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_gow.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_igo.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_iad.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.75);
+     rounds_vti.attr('fill','none').attr("stroke", '#808080').attr('stroke-width', 0.5);
+     rounds_trj.attr('fill','#d75b68').attr("stroke", 'none');
+ });
 });  
 
 
