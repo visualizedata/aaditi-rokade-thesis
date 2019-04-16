@@ -5,7 +5,9 @@
 // Load JSON
 d3.json('./data/thesis_data.json').then((data) => {
     console.log(data);
-    
+  
+// DIV for TOOLTIP
+var div = d3.select('body').append('div').attr('class', 'tooltip');  
 
 // DIV FOR TOOLTIP
 var svg = d3.select(".col-10").append('svg').attr('width','115%').attr('height','130%')
