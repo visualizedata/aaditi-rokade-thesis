@@ -13,7 +13,7 @@ body {
                 font: 12px sans-serif;
                 font-family: 'Lato', sans-serif;
                 font-weight: bold;
-                background: snow;	
+                background: #fefefe;	
                 border: 0px;		
                 border-radius: 2px;
                 line-height: 14px;
@@ -107,7 +107,7 @@ div#tooltip {
         height: 40px;
         padding: 2px;
         font-size: 14px;
-        background: #fafad2;
+        background: #fefefe;
         border-radius: 2px;
         pointer-events: none;
         stroke: black;

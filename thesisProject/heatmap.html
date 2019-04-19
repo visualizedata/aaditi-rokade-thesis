@@ -26,12 +26,12 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles_heatmap.css" />
+    <link rel="stylesheet" href="styles_heatmap.css"/>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col"></div>
+        <div class="col"> <br><a href="./comparison.html"><h6><< Back </h6></a> </div>
         <div class="col">
           <h4>
             Can awareness about 'the effects of weather on flight experirence'
@@ -55,7 +55,7 @@
         <!--<select class="form-control">-->
         <!--  <option>Default select</option>-->
         <!--</select>-->
-        <br><br>
+        <!--<br><br>-->
                 <!--<div class="form-radio form-check-inline">-->
                 <!--  <input-->
                 <!--    class="form-check-input"-->
@@ -81,11 +81,23 @@
                 <!--  <label class="form-check-label" for="inlineRadio2">Complaints</label>-->
                 <!--</div>-->
       </div>
-      
+        <br>
+        
         <div class="temperature" id='temp'></div>
         <br>
         <div class="rainfall" id='rain'></div>
+        <br>
+        <div class="labels" id="labe"></div>
+        
     </div>
+    
+    <div class="footer">
+       <text> Sources: </text>
+          <a href="http://dgca.nic.in/"> DGCA </a>
+            <a href="http://www.imd.gov.in/Welcome%20To%20IMD/Welcome.php"> IMD </a>
+            <a href="https://data.gov.in/"> DataGov </a>
+    </div>
+    
      <script src="heatmap.js"></script>
   </body>
 </html>
